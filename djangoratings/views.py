@@ -82,12 +82,12 @@ class AddRatingView(object):
 
     def authentication_required_response(self, request, context):
         response = HttpResponse('You must be logged in to vote.')
-        response.status_code = 403
+        #response.status_code = 403
         return response
     
     def cannot_change_vote_response(self, request, context):
         response = HttpResponse('You have already voted.')
-        response.status_code = 403
+        #response.status_code = 403
         return response
     
     def cannot_delete_vote_response(self, request, context):
